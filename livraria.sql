@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 17-Set-2022 às 01:32
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Host: localhost
+-- Tempo de geração: 28-Set-2022 às 03:21
+-- Versão do servidor: 10.4.21-MariaDB
+-- versão do PHP: 7.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,6 +42,17 @@ CREATE TABLE `generos` (
   `cod_genero` int(11) DEFAULT NULL,
   `nome_genero` varchar(120) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `generos`
+--
+
+INSERT INTO `generos` (`cod_genero`, `nome_genero`) VALUES
+(1, 'Biografias'),
+(2, 'Literatura'),
+(3, 'Autoajuda'),
+(4, 'Didático'),
+(5, 'Quadrinhos');
 
 -- --------------------------------------------------------
 
